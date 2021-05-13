@@ -1,4 +1,4 @@
-[![View on Streamlit](https://img.shields.io/badge/Streamlit-View%20on%20Streamlit%20app-ff69b4?logo=streamlit)](https://share.streamlit.io/narasimhanavpl/fruit-detector/main/fruit_classifier.py){:target="_blank"}
+[![View on Streamlit](https://img.shields.io/badge/Streamlit-View%20on%20Streamlit%20app-ff69b4?logo=streamlit)](https://share.streamlit.io/narasimhanavpl/fruit-detector/main/fruit_classifier.py)
 # Fruit Classifier
 
 This is a simple app to classify fruits using [fastai](https://docs.fast.ai/) and [streamlit](https://www.streamlit.io/). The app is deployed using Streamlit Sharing. Click [here](https://share.streamlit.io/narasimhanavpl/fruit-detector/main/fruit_classifier.py) to test it. This project is done for the course digital image processing.
