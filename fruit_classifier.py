@@ -4,7 +4,7 @@ from fastai.vision.all import *
 from pathlib import Path
 
 import streamlit as st
-
+st.title("Fruit Classifier")
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
