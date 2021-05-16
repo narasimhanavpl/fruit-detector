@@ -23,8 +23,7 @@ class Predict:
 
     def display_output(self):
         st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
-    
-    @st.cache(hash_funcs={dict: lambda _: None})
+ 
     def get_prediction(self):
 
         if st.button('Classify'):
