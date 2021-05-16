@@ -2,11 +2,10 @@ from fastai.vision.widgets import *
 from fastai.vision.all import *
 from pathlib import Path
 import streamlit as st
+
 st.title("Fruit Classifier")
 st.write("Project for DIP")
 
-
-@st.cache(hash_funcs={dict: lambda _: None})
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
@@ -24,7 +23,8 @@ class Predict:
 
     def display_output(self):
         st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
-
+    
+    @st.cache(hash_funcs={dict: lambda _: None})
     def get_prediction(self):
 
         if st.button('Classify'):
