@@ -2,11 +2,11 @@ from fastai.vision.widgets import *
 from fastai.vision.all import *
 from pathlib import Path
 import streamlit as st
-
-@st.cache()
-
 st.title("Fruit Classifier")
 st.write("Project for DIP")
+
+
+@st.cache(hash_funcs={dict: lambda _: None})
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
