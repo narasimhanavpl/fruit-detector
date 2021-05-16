@@ -1,10 +1,10 @@
 from fastai.vision.widgets import *
 from fastai.vision.all import *
-
 from pathlib import Path
-
 import streamlit as st
-@st.cache(max_entries=10, ttl=3600)
+
+@st.cache()
+
 st.title("Fruit Classifier")
 st.write("Project for DIP")
 class Predict:
