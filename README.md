@@ -5,7 +5,7 @@ This is a simple app to classify fruits using [fastai](https://docs.fast.ai/) an
 
 ## Overview
 ### Dataset
-1200 different fruit images are obtained using duckduckgo search engine. There are 150 images of each type of fruit. The fruit types it can detect are Apple, Orange, Kiwi, Banana, Mango, Pineapple, Pomegranate and Watermelon. 
+2000 different fruit images are obtained using duckduckgo search engine. There are 150 images of each type of fruit. The fruit types it can detect are Apple, Orange, Kiwi, Banana, Mango, Pineapple, Pomegranate, Watermelon, Passionfruit, Jackfruit, Grapes and Guava. 
 
 ## Results
 I used some pics off the internet to test the classifier. Some of the results are given below. 
