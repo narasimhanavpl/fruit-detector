@@ -7,7 +7,6 @@ st.title("Fruit Classifier")
 st.write("Project for DIP")
 sidebar = st.sidebar.selectbox("Applications",options=["Fruit detector", "Fake ID creator"])
 
-
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
@@ -27,7 +26,6 @@ class Predict:
         st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
  
     def get_prediction(self):
-
         if st.button('Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
