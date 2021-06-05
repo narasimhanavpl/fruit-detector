@@ -5,6 +5,8 @@ import streamlit as st
 
 st.title("Fruit Classifier")
 st.write("Project for DIP")
+sidebar = st.sidebar.selectbox("Applications",options=["Fruit detector", "Fake ID creator"])
+
 
 class Predict:
     def __init__(self, filename):
