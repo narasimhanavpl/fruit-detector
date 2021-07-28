@@ -35,5 +35,5 @@ if __name__=='__main__':
 
     file_name='export.pkl'
 
-    predictor = predict(file_name)
+    predictor = Predict(file_name)
 
