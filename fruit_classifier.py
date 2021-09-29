@@ -1,10 +1,9 @@
 from fastai.vision.widgets import *
 from fastai.vision.all import *
-from pathlib import Path
-import streamlit as st
 
-st.title("Fruit Classifier")
-st.write("Project for DIP")
+from pathlib import Path
+
+import streamlit as st
 
 class Predict:
     def __init__(self, filename):
@@ -37,4 +36,3 @@ if __name__=='__main__':
     file_name='export.pkl'
 
     predictor = Predict(file_name)
-
